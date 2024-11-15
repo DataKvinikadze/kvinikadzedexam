@@ -34,6 +34,9 @@ const quizQuestions: QuizQuestion[] = [
 
 const QuizPage = () => {
   // შექმენით 3 ცვლადი და მიანიჭეთ მათ შესაბამისი საწყისი მნიშვნელობები
+  const [current, setCurrent] = useState(1);
+  const [question, setQuestion] = useState(1);
+  const [score, setScore] = useState(0);
 
   // პირველი ცვლადი : currentQuestion - მიმდინარე კითხვის ინდექსი (რომ გავიგოთ მერამდენე კითცვაზეა მომხმარებელი)
 
