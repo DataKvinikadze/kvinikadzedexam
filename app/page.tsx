@@ -6,14 +6,14 @@ import { redirect, useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
 
-  const [popup, setPopup] = useState(false);
-  const [read, setRead] = useState(false);
+  const [popup, setPopup] = useState<boolean>(false);
+  const [read, setRead] = useState<boolean>(false);
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     setPopup(true);
   };
 
-  const handleConfirmation = (value: boolean) => {
+  const handleConfirmation = (value: boolean): void => {
     if (value == true) {
       setRead(true);
       setPopup(false);
